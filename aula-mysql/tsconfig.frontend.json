@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "rootDir": "public/ts",
+    "outDir": "public/js",
+    "strict": true,
+    "lib": ["DOM", "ES2020"]
+  },
+  "include": ["public/ts/**/*.ts"]
+}

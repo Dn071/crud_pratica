@@ -1,0 +1,16 @@
+
+CREATE DATABASE IF NOT EXISTS aula_mysql
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE aula_mysql;
+
+
+CREATE TABLE IF NOT EXISTS alunos (
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(120) NOT NULL,
+  email VARCHAR(160) NOT NULL,
+  curso VARCHAR(120) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY uq_alunos_email (email)
+);
